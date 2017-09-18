@@ -19,8 +19,8 @@ def restore_conf():
     if not os.path.exists(conf_filename):
         conf_file = open(conf_filename, 'w')
         default_conf = '''[main]
-emailsubject = Your Postcard from the Wyolum Photobooth
-emailmsg = Here's your picture from the http://wyolum.com photobooth!
+emailsubject = Your Postcard from the Coffee and Pi Photobooth
+emailmsg = Here's your picture from the Coffee and Pi photobooth!
 photocaption = postcard from the xxx event
 logopng = logo.png
 
@@ -41,7 +41,7 @@ oauth2_refresh_period = 1800000
     conf = ConfigParser.ConfigParser()
     conf.read(conf_filename)
 
-    emailSubject = conf.get('main', 'emailSubject') # "Your Postcard from the Wyolum Photobooth"
+    emailSubject = conf.get('main', 'emailSubject') # "Your Postcard from the Coffee & Pi Photobooth"
     emailMsg = conf.get('main', 'emailMsg') # "Here's your picture from the http://wyolum.com photobooth!"
     logopng = conf.get('main', 'logopng') # "logo.png"
 

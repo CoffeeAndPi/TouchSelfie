@@ -1,8 +1,8 @@
 '''
 Open source photo booth.
 
-Kevin Osborn and Justin Shaw
-WyoLum.com
+Kevin Osborn and Justin Shaw, WyoLum.com
+Brad Derstine, Coffee & Pi
 '''
 
 ## imports
